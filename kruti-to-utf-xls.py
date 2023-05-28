@@ -54,7 +54,7 @@ def processxls(inputfile,outputfile):
             pvalue=round(i/(rmax-1)*100,2)
             overall_val=round(100.00*(s-1)/smax+pvalue/smax,2)
             ins=''
-            for k in range(int(pvalue/5)):
+            for k in range(int(pvalue/20)):
                 ins=ins+'#'
                 if(k==19):
                     ins=ins+'\033[1D#]'
