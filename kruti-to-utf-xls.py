@@ -56,7 +56,7 @@ def processxls(inputfile,outputfile):
             ins=''
             for k in range(int(pvalue/20)):
                 ins=ins+'#'
-                if(k==19):
+                if(k==4):
                     ins=ins+'\033[1D#]'
             print(f'\033[A [{bcolors.OKGREEN}{overall_val:.2f}%{bcolors.ENDC}][{bcolors.OKBLUE}{pvalue:.2f}{bcolors.ENDC}%][{ins}{bcolors.OKBLUE}#{bcolors.ENDC}  ')
             for j in range(cmax):
